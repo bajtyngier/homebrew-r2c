@@ -8,6 +8,7 @@ class R2c < Formula
   depends_on "python"
 
   def install
+    chmod "+x", "r2c.py"
     bin.install "r2c.py" => "r2c"
   end
 
