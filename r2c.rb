@@ -6,8 +6,8 @@ class R2c < Formula
   depends_on "python"
 
   def install
-    chmod "+x", "rtc.py"
-    bin.install "rtc.py" => "r2c"
+    chmod "+x", "r2c.py"
+    bin.install "r2c.py" => "r2c"
     prefix.install Dir["*"]
   end
 end
