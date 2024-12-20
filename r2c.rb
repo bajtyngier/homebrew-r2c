@@ -10,7 +10,7 @@ class R2c < Formula
     prefix.install Dir["*"]  # Install all files in the current directory
 
     # Install all files into r2c/ directory under Homebrew installation
-    bin.install "r2c/main.py" => "r2c"  # Symlink main.py as 'r2c'
+    bin.install "main.py" => "r2c"  # Symlink main.py as 'r2c'
     prefix.install "r2c"  # Move all files into r2c/ folder if necessary
   end
 end
