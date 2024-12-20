@@ -6,8 +6,11 @@ class R2c < Formula
   depends_on "python"
 
   def install
-    chmod "+x", "main.py"
-    bin.install "main.py" => "r2c"
-    prefix.install Dir["*"]
+    # Ensure the r2c directory exists
+    prefix.install Dir["*"]  # Install all files in the current directory
+
+    # Install all files into r2c/ directory under Homebrew installation
+    bin.install "r2c/main.py" => "r2c"  # Symlink main.py as 'r2c'
+    prefix.install "r2c"  # Move all files into r2c/ folder if necessary
   end
 end
