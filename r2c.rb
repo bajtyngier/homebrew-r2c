@@ -3,16 +3,11 @@ class R2c < Formula
   homepage "https://github.com/bajtyngier/r2c"
   url "https://github.com/bajtyngier/r2c/archive/refs/tags/1.0.0.tar.gz"
   sha256 "58932716cc7b06cc60f6a213833e2fbf14bd4feb4bbfedaa3ccce1909ffbb9f3"
-  license ""
-
   depends_on "python"
 
   def install
-    chmod "+x", "r2c.py"
-    bin.install "r2c.py" => "r2c"
-  end
-
-  test do
-    system "#{bin}/r2c", "--version"
+    chmod "+x", "rtc.py"
+    bin.install "rtc.py" => "r2c"
+    prefix.install Dir["*"]
   end
 end
