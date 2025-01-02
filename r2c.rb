@@ -1,8 +1,8 @@
 class R2c < Formula
   desc "Redmine to ClickUp migration tool"
   homepage "https://github.com/bajtyngier/r2c"
-  url "https://github.com/bajtyngier/r2c/archive/refs/tags/1.0.0.tar.gz"
-  sha256 "864b8997f67b955c1cc887839216d929ff96e170cc107b09fd5fced9d6fdb3d9"
+  url "https://github.com/bajtyngier/r2c/archive/refs/tags/1.1.0.tar.gz"
+  sha256 "fe61515f968ccefbe5fccdca938e3cf29f7429c2d9beee384eb2f0a78840a34a"
 
   depends_on "python@3"
 
